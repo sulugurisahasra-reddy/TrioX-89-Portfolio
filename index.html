@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suluguri Sahasra Reddy | Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="scroll-progress"></div>
+
+    <div id="toast-container"></div>
+
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <header class="navbar-header">
+        <nav class="navbar">
+            <a href="#home" class="nav-logo">Sahasra<span>.dev</span></a>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#github" class="nav-link">GitHub</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light mode">
+                    <i class="fa-solid me-fa fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content scroll-reveal">
+                    <div class="badge">Welcome to my portfolio</div>
+                    <h1 class="hero-title">SULUGURI SAHASRA REDDY</h1>
+                    <h2 class="hero-subtitle">Computer Science Engineering Student | Developer | Tech Enthusiast</h2>
+                    <p class="hero-description">
+                        Passionate about building creative, practical, and user-friendly digital experiences while continuously learning new technologies.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View My Projects <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="assets/resume.pdf" download class="btn btn-secondary">Download Resume <i class="fa-solid fa-download"></i></a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper scroll-reveal">
+                    <div class="profile-frame">
+                        <img src="assets/profile.jpg" alt="Suluguri Sahasra Reddy" class="profile-img" onerror="this.src='https://via.placeholder.com/350x350/E6E6FA/2D3748?text=Sahasra+Reddy'">
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down-indicator" aria-label="Scroll down">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-title text-center scroll-reveal">
+                    <h2>About Me</h2>
+                    <p>Get to know my background, interests, and aspirations</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text scroll-reveal">
+                        <h3>Passionate about Problem Solving & Web Innovation</h3>
+                        <p>
+                            Hello! I am a 1st-year Computer Science and Engineering student driven by curiosity and a strong desire to create software that makes a difference. My journey in tech started with a fundamental curiosity about how modern applications work under the hood.
+                        </p>
+                        <p>
+                            Currently, I am strengthening my foundation in <strong>Data Structures and Algorithms</strong> using Java, alongside building web platforms with standard modern web standards. I take keen interest in modern software architecture, web technologies, and the rapidly expanding realm of Artificial Intelligence and its real-world applications.
+                        </p>
+                        <p>
+                            My ultimate goal is to continuously grow as a full-stack engineer, tackling complex technical challenges while contributing positively to tech communities.
+                        </p>
+                    </div>
+                    <div class="about-card-wrapper scroll-reveal">
+                        <div class="glass-card fact-card">
+                            <div class="fact-header">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <h3>Quick Facts</h3>
+                            </div>
+                            <ul class="fact-list">
+                                <li><strong>Degree:</strong> B.Tech – CSE</li>
+                                <li><strong>Year:</strong> 1st Year</li>
+                                <li><strong>Focus:</strong> Software & Web Development</li>
+                                <li><strong>Location:</strong> Hyderabad, India</li>
+                                <li><strong>Interests:</strong> DSA, Web, AI & Emerging Tech</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-title text-center scroll-reveal">
+                    <h2>Technical Skills</h2>
+                    <p>Core competencies and technologies I am actively learning and applying</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="glass-card skill-category-card scroll-reveal">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Programming</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Java</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>C</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-category-card scroll-reveal">
+                        <div class="category-header">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h3>Web Development</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML5</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>CSS3</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript (ES6+)</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-category-card scroll-reveal">
+                        <div class="category-header">
+                            <i class="fa-solid fa-brain"></i>
+                            <h3>Computer Science</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Data Structures & Algorithms</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>OOP Principles</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Problem Solving</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-category-card scroll-reveal">
+                        <div class="category-header">
+                            <i class="fa-solid fa-wrench"></i>
+                            <h3>Tools & Platforms</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>GitHub</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>VS Code</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-title text-center scroll-reveal">
+                    <h2>Featured Projects</h2>
+                    <p>Explore some of my practical work and application implementations</p>
+                </div>
+
+                <div class="filter-container scroll-reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">HTML/CSS/JS</button>
+                    <button class="filter-btn" data-filter="java">Java</button>
+                    <button class="filter-btn" data-filter="dsa">DSA</button>
+                </div>
+
+                <div class="projects-grid" id="projects-grid">
+                    </div>
+            </div>
+        </section>
+
+        <section id="github" class="github-section">
+            <div class="container">
+                <div class="section-title text-center scroll-reveal">
+                    <h2>GitHub Repositories</h2>
+                    <p>Live, dynamically fetched projects directly from my GitHub profile</p>
+                </div>
+                <div id="github-repos" class="github-grid">
+                    <div class="loading-spinner">
+                        <i class="fa-solid fa-spinner fa-spin"></i> Loading repositories...
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education-section">
+            <div class="container">
+                <div class="section-title text-center scroll-reveal">
+                    <h2>Education Timeline</h2>
+                    <p>Academic milestones and foundation learning</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-card timeline-content">
+                            <span class="timeline-date">2023 - Present (1st Year)</span>
+                            <h3>B.Tech in Computer Science & Engineering</h3>
+                            <h4>KLH Deemed to be University, Hyderabad, India</h4>
+                            <p><strong>Relevant Coursework:</strong> Programming in C/Java, Discrete Mathematics, Web Foundations, Physics for Engineers.</p>
+                            <p><strong>Academic Focus:</strong> Building strong algorithmic fundamentals and mastering web concepts.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-card timeline-content">
+                            <span class="timeline-date">2021 - 2023</span>
+                            <h3>Higher Secondary Education (MPC)</h3>
+                            <h4>Junior College, Hyderabad</h4>
+                            <p>Focus on Mathematics, Physics, and Chemistry. Graduated with strong performance and fundamental problem-solving aptitude.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="certifications-section">
+            <div class="container">
+                <div class="section-title text-center scroll-reveal">
+                    <h2>Certifications</h2>
+                    <p>External achievements and verified learning programs</p>
+                </div>
+                <div class="certifications-grid">
+                    <div class="glass-card cert-card scroll-reveal">
+                        <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+                        <h3>Java Programming Fundamentals</h3>
+                        <p class="cert-org">Coursera / Oracle</p>
+                        <p class="cert-date">Issued: 2023</p>
+                        <a href="#" class="btn btn-sm btn-outline">View Certificate</a>
+                    </div>
+                    <div class="glass-card cert-card scroll-reveal">
+                        <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                        <h3>Responsive Web Design</h3>
+                        <p class="cert-org">freeCodeCamp</p>
+                        <p class="cert-date">Issued: 2023</p>
+                        <a href="#" class="btn btn-sm btn-outline">View Certificate</a>
+                    </div>
+                    <div class="glass-card cert-card scroll-reveal">
+                        <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3>Introduction to Data Structures</h3>
+                        <p class="cert-org">NPTEL / Swayam</p>
+                        <p class="cert-date">Issued: 2024</p>
+                        <a href="#" class="btn btn-sm btn-outline">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="achievements-section">
+            <div class="container">
+                <div class="section-title text-center scroll-reveal">
+                    <h2>Achievements & Exposure</h2>
+                    <p>Milestones, technical activities, and co-curricular involvement</p>
+                </div>
+                <div class="achievements-grid">
+                    <div class="glass-card achievement-card scroll-reveal">
+                        <div class="achieve-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <h3>University Hackathon Participant</h3>
+                        <p>Participated in 24-hour university coding competition, developing an emergency assistant web prototype.</p>
+                    </div>
+                    <div class="glass-card achievement-card scroll-reveal">
+                        <div class="achieve-icon"><i class="fa-solid fa-star"></i></div>
+                        <h3>Academic Distinction</h3>
+                        <p>Consistently maintained top performance tier in practical lab exercises and foundational logic modules.</p>
+                    </div>
+                    <div class="glass-card achievement-card scroll-reveal">
+                        <div class="achieve-icon"><i class="fa-solid fa-users"></i></div>
+                        <h3>Tech Club Workshop Lead</h3>
+                        <p>Co-organized a peer introductory session on Git & GitHub setup for incoming CS engineering freshmen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-title text-center scroll-reveal">
+                    <h2>Get In Touch</h2>
+                    <p>Have a question or want to collaborate? Send a message!</p>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact-info scroll-reveal">
+                        <div class="glass-card info-card">
+                            <h3>Contact Information</h3>
+                            <div class="info-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:sahasra.reddy@example.com">sahasra.reddy@example.com</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Hyderabad, Telangana, India</p>
+                                </div>
+                            </div>
+                            <div class="social-links-container">
+                                <h4>Connect with me</h4>
+                                <div class="social-links">
+                                    <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="mailto:sahasra.reddy@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper scroll-reveal">
+                        <form id="contact-form" class="glass-card contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                <span class="error-msg" id="name-error">Name is required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Feedback" required>
+                                <span class="error-msg" id="subject-error">Subject is required</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Hi Sahasra..." required></textarea>
+                                <span class="error-msg" id="message-error">Message must be at least 10 characters</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <h3 class="footer-title">SULUGURI SAHASRA REDDY</h3>
+            <p class="footer-quote">"Building, learning, and growing one project at a time."</p>
+            <div class="footer-socials">
+                <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:sahasra.reddy@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Suluguri Sahasra Reddy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
